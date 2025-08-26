@@ -11,7 +11,3 @@ this os is a unix like it is inspired by unix and will later support unix comman
 - `linker.ld` — Linker script
 
 ---
-
-### How It Was Made
-
-#### 1. Bootloader Setups
