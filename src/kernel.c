@@ -23,11 +23,7 @@ void kernel_main(void)
 	/* Initialize terminal interface */
 	terminal_initialize();
 
-	/* Newline support is left as an exercise. */
+	outlf("Welcome to OxideOs!");
 
 	idt_init();
-
-	int sum = 10 / 0;
-
-	outlf("Hello, kernel World!");
 }
