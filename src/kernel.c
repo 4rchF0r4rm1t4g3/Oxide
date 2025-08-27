@@ -4,6 +4,8 @@
 
 #include "out.h"
 #include "idt.h"
+#include "pag.h"
+#include "memory.h"
 
 /* Check if the compiler thinks you are targeting the wrong operating system. */
 #if defined(__linux__)
@@ -26,4 +28,6 @@ void kernel_main(void)
 	outlf("Welcome to OxideOs!");
 
 	idt_init();
+	init_paging();
+	kernmalloc(20);
 }
